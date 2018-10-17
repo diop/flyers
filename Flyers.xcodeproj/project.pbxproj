@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114CA9E5217707F6009CAFD7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114CA9E4217707F6009CAFD7 /* Login.storyboard */; };
+		114CA9E921778C62009CAFD7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CA9E821778C62009CAFD7 /* LoginViewController.swift */; };
 		118B153C217552FE00BF2E3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B153B217552FE00BF2E3C /* AppDelegate.swift */; };
 		118B153E217552FE00BF2E3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B153D217552FE00BF2E3C /* ViewController.swift */; };
 		118B1541217552FE00BF2E3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118B153F217552FE00BF2E3C /* Main.storyboard */; };
 		118B1543217552FF00BF2E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 118B1542217552FF00BF2E3C /* Assets.xcassets */; };
 		118B1546217552FF00BF2E3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 118B1544217552FF00BF2E3C /* LaunchScreen.storyboard */; };
+		118B155921755CC000BF2E3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 118B155821755CC000BF2E3C /* GoogleService-Info.plist */; };
 		8075FDEF92A88F6DF82913E7 /* Pods_Flyers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526A2938BF2380765C516F44 /* Pods_Flyers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114CA9E4217707F6009CAFD7 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		114CA9E821778C62009CAFD7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		118B1538217552FE00BF2E3C /* Flyers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flyers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118B153B217552FE00BF2E3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		118B153D217552FE00BF2E3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +28,7 @@
 		118B1542217552FF00BF2E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		118B1545217552FF00BF2E3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		118B1547217552FF00BF2E3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		118B155821755CC000BF2E3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C6F269F30FFF9CB0EACA8DC /* Pods-Flyers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flyers/Pods-Flyers.debug.xcconfig"; sourceTree = "<group>"; };
 		526A2938BF2380765C516F44 /* Pods_Flyers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flyers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DB2B76B906FAE5EACB755F /* Pods-Flyers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flyers.release.xcconfig"; path = "Pods/Target Support Files/Pods-Flyers/Pods-Flyers.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,13 +68,80 @@
 			isa = PBXGroup;
 			children = (
 				118B153B217552FE00BF2E3C /* AppDelegate.swift */,
-				118B153D217552FE00BF2E3C /* ViewController.swift */,
-				118B153F217552FE00BF2E3C /* Main.storyboard */,
+				118B1557217559F000BF2E3C /* Supporting Files */,
+				118B15562175594100BF2E3C /* Views */,
+				118B15542175592300BF2E3C /* Storyboards */,
+				118B15532175591900BF2E3C /* Services */,
+				118B15522175591100BF2E3C /* Models */,
+				118B15512175590500BF2E3C /* Helpers */,
+				118B1550217558F400BF2E3C /* Extensions */,
+				118B154F2175589B00BF2E3C /* Controllers */,
 				118B1542217552FF00BF2E3C /* Assets.xcassets */,
-				118B1544217552FF00BF2E3C /* LaunchScreen.storyboard */,
-				118B1547217552FF00BF2E3C /* Info.plist */,
 			);
 			path = Flyers;
+			sourceTree = "<group>";
+		};
+		118B154F2175589B00BF2E3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				118B153D217552FE00BF2E3C /* ViewController.swift */,
+				114CA9E821778C62009CAFD7 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		118B1550217558F400BF2E3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		118B15512175590500BF2E3C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		118B15522175591100BF2E3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		118B15532175591900BF2E3C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		118B15542175592300BF2E3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				118B1544217552FF00BF2E3C /* LaunchScreen.storyboard */,
+				118B153F217552FE00BF2E3C /* Main.storyboard */,
+				114CA9E4217707F6009CAFD7 /* Login.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		118B15562175594100BF2E3C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		118B1557217559F000BF2E3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				118B155821755CC000BF2E3C /* GoogleService-Info.plist */,
+				118B1547217552FF00BF2E3C /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6B15A137D21264206FDD5B12 /* Frameworks */ = {
@@ -150,7 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				118B1546217552FF00BF2E3C /* LaunchScreen.storyboard in Resources */,
+				118B155921755CC000BF2E3C /* GoogleService-Info.plist in Resources */,
 				118B1543217552FF00BF2E3C /* Assets.xcassets in Resources */,
+				114CA9E5217707F6009CAFD7 /* Login.storyboard in Resources */,
 				118B1541217552FE00BF2E3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				114CA9E921778C62009CAFD7 /* LoginViewController.swift in Sources */,
 				118B153E217552FE00BF2E3C /* ViewController.swift in Sources */,
 				118B153C217552FE00BF2E3C /* AppDelegate.swift in Sources */,
 			);
@@ -387,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA9KWA3DF4;
-				INFOPLIST_FILE = Flyers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flyers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,7 +482,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA9KWA3DF4;
-				INFOPLIST_FILE = Flyers/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Flyers/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
